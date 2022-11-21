@@ -68,6 +68,12 @@
   <h1>Try Svelte with Wasm</h1>
 
   <center>
+    <p>
+      Upload image to resize & filter with <a
+        href="https://silvia-odwyer.github.io/photon/">Photon</a
+      >, a wasm package
+    </p>
+
     <div><input bind:this={fileInput} type="file" /></div>
 
     <div>Loaded image<canvas id="canvas" bind:this={canvas} /></div>
@@ -82,15 +88,4 @@
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
 </style>
